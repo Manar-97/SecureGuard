@@ -16,12 +16,11 @@ class MyApp extends StatelessWidget {
       theme: TAppTheme.lightTheme,
       darkTheme: TAppTheme.darkTheme,
       themeMode: ThemeMode.system,
-      home: HomeScreen(),
       routes: {
-        HomeScreen.routeName : (_) =>const HomeScreen(),
-        SplashScreen.routeName : (_) =>SplashScreen(),
+        HomeScreen.routeName: (_) => const HomeScreen(),
+        SplashScreen.routeName: (_) => SplashScreen(),
       },
-      initialRoute: SplashScreen.routeName,
+      initialRoute: HomeScreen.routeName,
     );
   }
 }
